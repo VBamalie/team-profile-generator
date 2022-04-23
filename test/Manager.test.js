@@ -8,4 +8,4 @@ describe("set office number via constructor argument" , ()=>{
     expect(e.officeNumber).toBe(testValue);
 })
 //can get office number
-//role reurns manager
+//role returns manager

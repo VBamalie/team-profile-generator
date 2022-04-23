@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/VBamalie/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/VBamalie/team-profile-generator#readme"
+  "homepage": "https://github.com/VBamalie/team-profile-generator#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
