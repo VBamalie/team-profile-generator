@@ -1,7 +1,6 @@
 //require the employee from the lib folder
-const { it, expect } = require("@jest/globals");
-const { describe } = require("yargs");
-const Employee = require("../lib/Employee")
+const Employee = require("../lib/Employee");
+
 //test can begin employee instance
 describe("Employee" , ()=>{
     it("Begin the instance of employee", ()=>{
@@ -24,7 +23,7 @@ describe("Employee" , ()=>{
     })
 //can set email via constructor args
     it("can set an email with the constructor arguments" , () =>{
-        const email = 1;
+        const email = "email";
         const e = new Employee(email);
 
         expect(e.email).toBe(email)
@@ -32,18 +31,37 @@ describe("Employee" , ()=>{
 })
 //can get name via constructor function
 //put names into the html
-describe("getName" , ()=>{
-    it("should get the name with a function" , () =>{
 
-    })
-})
+
+// describe("getName" , ()=>{
+//     it("should get the name with a function" , () =>{
+
+//     })
+// })
+
+
 //can get id via constructor function
 //can get email via constructor function
 //role function should return employee
-describe("getRole" , ()=>{
-    it("should return employee" , () => {
-        const e = function getRole(){ return "employee";}
-        
-        expect(e).toBe("Employee")
-    })
-})
+
+
+// describe("getRole" , ()=>{
+//     it("should return employee when they aren't a manager, intern, or engineer" , () => {
+//         let employee = new Employee
+//         if(!employee instanceof Manager || Intern || Engineer){
+//         const e = function getRole(){ return "employee";}
+     
+//         expect(e).toBe("employee")
+//     }
+
+//         it("should return Manager when ")
+//     })
+//     it("should return Manager, intern, or otherwise when it's a specialized employee", ()=>{
+//         let employee = new Manager
+//         if(!employee instanceof Manager || Intern || Engineer){
+//             const e = function getRole(){ return "employee";}
+         
+//             expect(e).toBe("employee")
+//         }
+//     })
+// })
